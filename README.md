@@ -12,7 +12,7 @@ Cuarto laboratorio de la asignatura Robótica de la Universidad Nacional de Colo
 
 ## Introducción
 
-El problema cinemático directo es uno de los conceptos fundamentales dentro de la formación de un ingeniero en el campo de la robótica, de esta forma la implementación de estos modelos a un manipulador físico como el Phantom X a través del entorno ROS, determina una posibilidad enorme de apropiamiento del conocimiento por parte de los estudiantes.
+El problema cinemático directo es uno de los conceptos fundamentales dentro de la formación de un ingeniero en el campo de la robótica, de esta forma la implementación de estos modelos a un manipulador físico como el Phantom X a través del entorno ROS, determina una posibilidad enorme de apropiamiento del conocimiento por parte de los estudiantes de la utilidad de los modelos de cinematica directa.
 
 ## Solución planteada
 
@@ -41,6 +41,7 @@ Posteriormente, se clonó el repositorio de GitHub [dynamixel_one_motor](https:/
 ```
 
 ### Código Solución
+<<<<<<< HEAD
 
 Para desarrollar la solución del laboratorio, el equipo de trabajo se basó en el anterior repositorio remoto, comenzando por modificar el archivo [basic.yaml](https://github.com/fegonzalez7/dynamixel_one_motor/blob/master/config/basic.yaml), en el que se debian crear las instancias de las 4 articulaciones restantes del manipulador.
 
@@ -82,3 +83,5 @@ Seguidamente, se desarrolló una especie de interfaz que permitiera al usuario e
 ```
 
 Finalmente, se debia programar el movimiento de las articulaciones, para lo cual se tomó como base el script [jointPub.py](https://github.com/fegonzalez7/dynamixel_one_motor/blob/master/scripts/jointPub.py), modificándolo para poder enviar señales a los 5 motores. En base al enunciado del laboratorio, en el que se pedia realizar el movimiento de manera secuencial, se debió utilizar la estructura 5 veces, añadiendo el siguiente motor en cada iteración como puede observarse en el script [jointPub.py](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/catkin_lab_2_ws/src/dynamixel_one_motor/scripts/jointPub.py). En este archivo, adicionalmente, se redujo la velocidad del sistema para realizar el movimiento de manera más pausada.
+=======
+>>>>>>> b81e137b54e792bd5eee751959854eba85f605ed
