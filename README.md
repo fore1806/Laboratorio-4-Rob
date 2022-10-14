@@ -85,5 +85,71 @@ Finalmente, se debia programar el movimiento de las articulaciones, para lo cual
 
 ### Cinemática directa 
 
-En cuanto a la cinemática directa se procede hallando las matrices de transformación homogenea para cada articulación.
+Con el fin de desarrollar la cinemática directa del Phantom X se procede inicialmente tomando las medidas que permiten encontrar los parámetros DHstd del mismo. A continuación se muestra un esquema ilustrativo con dichas medidas y con la asignan de los marcos de referencia respectivos.
+
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/ParametrosDH/ParametrosRobot.png)
+
+Teniendo en cuenta este diagrama, se encuentran los parámetros de articulación y eslabón para el manipulador.
+
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/ParametrosDH/ParametrosDH.png)
+
+Con estos parámetros se hallan las matrices de transformación homogéneas para cada uno de los sistemas y finalmente se halla el modelo geométrico directo a partir del modelo interno de la cadena cinemática. Se obtienen entonces la siguiente matriz:
+
+[cos(O4)*(cos(O2 + sym(48/25))*cos(O3 + sym(61/50))*cos(O1) - sin(O2 + sym(48/25))*sin(O3 + sym(61/50))*cos(O1)) - sin(O4)*(cos(O2 + sym(48/25))*sin(O3 + sym(61/50))*cos(O1) + cos(O3 + sym(61/50))*sin(O2 + sym(48/25))*cos(O1)), - sin(O4)*(cos(O2 + sym(48/25))*cos(O3 + sym(61/50))*cos(O1) - sin(O2 + sym(48/25))*sin(O3 + sym(61/50))*cos(O1)) - cos(O4)*(cos(O2 + sym(48/25))*sin(O3 + sym(61/50))*cos(O1) + cos(O3 + sym(61/50))*sin(O2 + sym(48/25))*cos(O1)), sin(O1), (5321*cos(O2 + sym(48/25))*cos(O1))/50 - 100*sin(O4)*(cos(O2 + sym(48/25))*sin(O3 + sym(61/50))*cos(O1) + cos(O3 + sym(61/50))*sin(O2 + sym(48/25))*cos(O1)) + 100*cos(O4)*(cos(O2 + sym(48/25))*cos(O3 + sym(61/50))*cos(O1) - sin(O2 + sym(48/25))*sin(O3 + sym(61/50))*cos(O1)) + 100*cos(O2 + sym(48/25))*cos(O3 + sym(61/50))*cos(O1) - 100*sin(O2 + sym(48/25))*sin(O3 + sym(61/50))*cos(O1); cos(O4)*(cos(O2 + sym(48/25))*cos(O3 + sym(61/50))*sin(O1) - sin(O2 + sym(48/25))*sin(O3 + sym(61/50))*sin(O1)) - sin(O4)*(cos(O2 + sym(48/25))*sin(O3 + sym(61/50))*sin(O1) + cos(O3 + sym(61/50))*sin(O2 + sym(48/25))*sin(O1)), - cos(O4)*(cos(O2 + sym(48/25))*sin(O3 + sym(61/50))*sin(O1) + cos(O3 + sym(61/50))*sin(O2 + sym(48/25))*sin(O1)) - sin(O4)*(cos(O2 + sym(48/25))*cos(O3 + sym(61/50))*sin(O1) - sin(O2 + sym(48/25))*sin(O3 + sym(61/50))*sin(O1)), -cos(O1), 100*cos(O4)*(cos(O2 + sym(48/25))*cos(O3 + sym(61/50))*sin(O1) - sin(O2 + sym(48/25))*sin(O3 + sym(61/50))*sin(O1)) - 100*sin(O4)*(cos(O2 + sym(48/25))*sin(O3 + sym(61/50))*sin(O1) + cos(O3 + sym(61/50))*sin(O2 + sym(48/25))*sin(O1)) + (5321*cos(O2 + sym(48/25))*sin(O1))/50 + 100*cos(O2 + sym(48/25))*cos(O3 + sym(61/50))*sin(O1) - 100*sin(O2 + sym(48/25))*sin(O3 + sym(61/50))*sin(O1); cos(O4)*(cos(O2 + sym(48/25))*sin(O3 + sym(61/50)) + cos(O3 + sym(61/50))*sin(O2 + sym(48/25))) + sin(O4)*(cos(O2 + sym(48/25))*cos(O3 + sym(61/50)) - sin(O2 + sym(48/25))*sin(O3 + sym(61/50))), cos(O4)*(cos(O2 + sym(48/25))*cos(O3 + sym(61/50)) - sin(O2 + sym(48/25))*sin(O3 + sym(61/50))) - sin(O4)*(cos(O2 + sym(48/25))*sin(O3 + sym(61/50)) + cos(O3 + sym(61/50))*sin(O2 + sym(48/25))), sym(0), (5321*sin(O2 + sym(48/25)))/50 + 100*cos(O2 + sym(48/25))*sin(O3 + sym(61/50)) + 100*cos(O3 + sym(61/50))*sin(O2 + sym(48/25)) + 100*cos(O4)*(cos(O2 + sym(48/25))*sin(O3 + sym(61/50)) + cos(O3 + sym(61/50))*sin(O2 + sym(48/25))) + 100*sin(O4)*(cos(O2 + sym(48/25))*cos(O3 + sym(61/50)) - sin(O2 + sym(48/25))*sin(O3 + sym(61/50))) + sym(933/10); sym(0), sym(0), sym(0), sym(1)]![image](https://user-images.githubusercontent.com/42379708/195934418-88b45a6b-1f6f-451c-bf1a-78fff993ad99.png)
+
+
+Teniendo en cuenta las configuraciones especificadas se encuentra la posición y orientación del último sistema coordenado respecto al marco {0}. Para la posición HOME, la posición del robot debe ser la siguiente:
+
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Posiciones/Home.jpg)
+
+La cual coincide con lo obtenido en la practica:
+
+Imagen HOME. 
+
+En lo que respecta a la posición 1, se debe llegar a la siguiente figura:
+
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Posiciones/Posicion1.jpg)
+
+Lo cual se corrobora en la practica:
+
+IMAGEN Posicion 1. 
+
+La posición 2 debe ser:
+
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Posiciones/Posicion2.jpg)
+
+Efectivamente es:
+
+IMAGEN Posicion 2. 
+
+Ya para la posicion 3 se busca lo siguiente:
+
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Posiciones/Posicion3.jpg)
+
+Se obtiene:
+
+IMAGEN Posicion 3. 
+
+En lo que respecta a la posición 4 se debe llegar a la siguiente figura:
+
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Posiciones/Posicion4.jpg)
+
+Se llega a lo siguiente:
+
+IMAGEN Posicion 4. 
+
+Finalmente, la posicion de descanso debe ser de la siguiente manera:
+
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Posiciones/Recogida.jpg)
+
+En la practica se llega a esta posicion en la cual el robot permanece estable y en general sin alteraciones en su estructura incluso si a este se le quita su suministro de energia. 
+
+IMAGEN REPOSO
+
+
+
+
+
+
+
 
