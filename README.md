@@ -4,6 +4,9 @@ Cuarto laboratorio de la asignatura Robótica de la Universidad Nacional de Colo
  
 ## Autores :busts_in_silhouette: 
  
+
+
+
 |               Nombre               |GitHub nickname| 
 |------------------------------------|---------------| 
 |  Nikolai Alexander Caceres Penagos |[nacaceresp](https://github.com/nacaceresp)| 
@@ -145,6 +148,7 @@ En la practica se llega a esta posicion en la cual el robot permanece estable y 
 
 IMAGEN REPOSO
 
+https://user-images.githubusercontent.com/42379708/195942567-c50231a5-87b1-4e06-b8b9-f3997698d7d9.mp4
 
 
 
