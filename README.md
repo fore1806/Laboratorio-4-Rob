@@ -41,3 +41,44 @@ Posteriormente, se clonó el repositorio de GitHub [dynamixel_one_motor](https:/
 ```
 
 ### Código Solución
+
+Para desarrollar la solución del laboratorio, el equipo de trabajo se basó en el anterior repositorio remoto, comenzando por modificar el archivo [basic.yaml](https://github.com/fegonzalez7/dynamixel_one_motor/blob/master/config/basic.yaml), en el que se debian crear las instancias de las 4 articulaciones restantes del manipulador.
+
+A continuación, el código de solución fue desarrollado en el lenguaje de programación Python. En primer lugar, se programaron las posiciones articulares requeridas por el enunciado del laboratorio, para lo cual se utilizó la libreria numpy.
+
+```python
+    import numpy as np
+    q0= [0,0,0,0,0]
+    q1=np.multiply([-20,20,-20,20,0],np.pi/180)
+    q2=np.multiply([30,-30,30,-30,0],np.pi/180)
+    q3=np.multiply([-90,15,-55,17,0],np.pi/180)
+    q4=np.multiply([-90,45,-55,45,10],np.pi/180)
+    q5= np.multiply([0,-110,90,5,0],np.pi/180)    
+```
+
+Seguidamente, se desarrolló una especie de interfaz que permitiera al usuario establecer las posiciones articulares a través del teclado de su ordenador.
+
+
+```python
+    key=input()
+    if key == 'z' or key == 'Z':
+        q=q0
+        key = ' '
+    elif key == 'x' or key == 'X':
+        q=q1
+        key = ' '
+    elif key == 'c' or key == 'C':
+        q=q2
+        key = ' '
+    elif key == 'v' or key == 'V':
+        q=q3
+        key = ' '
+    elif key == 'b' or key == 'B':
+        q=q4
+        key = ' '
+    elif key == 'n' or key == 'N':
+        q=q5
+        key = ' '   
+```
+
+Finalmente, se debia programar el movimiento de las articulaciones, para lo cual se tomó como base el script [jointPub.py](https://github.com/fegonzalez7/dynamixel_one_motor/blob/master/scripts/jointPub.py), modificándolo para poder enviar señales a los 5 motores. En base al enunciado del laboratorio, en el que se pedia realizar el movimiento de manera secuencial, se debió utilizar la estructura 5 veces, añadiendo el siguiente motor en cada iteración como puede observarse en el script [jointPub.py](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/catkin_lab_2_ws/src/dynamixel_one_motor/scripts/jointPub.py). En este archivo, adicionalmente, se redujo la velocidad del sistema para realizar el movimiento de manera más pausada.
