@@ -104,17 +104,17 @@ Teniendo en cuenta las configuraciones especificadas se encuentra la posición y
 
 ![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Posiciones/Home.jpg)
 
-La cual coincide con lo obtenido en la practica:
+La cual coincide con lo obtenido en la práctica:
 
-Imagen HOME. 
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q0.jpeg)
 
 En lo que respecta a la posición 1, se debe llegar a la siguiente figura:
 
 ![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Posiciones/Posicion1.jpg)
 
-Lo cual se corrobora en la practica:
+Lo cual se corrobora en la postura obtenida en el laboratorio:
 
-IMAGEN Posicion 1. 
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q1.jpeg)
 
 La posición 2 debe ser:
 
@@ -122,7 +122,7 @@ La posición 2 debe ser:
 
 Efectivamente es:
 
-IMAGEN Posicion 2. 
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q2.jpeg)
 
 Ya para la posicion 3 se busca lo siguiente:
 
@@ -130,7 +130,11 @@ Ya para la posicion 3 se busca lo siguiente:
 
 Se obtiene:
 
-IMAGEN Posicion 3. 
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q3-1.jpeg)
+
+Para ver de mejor manera esta configuración se muestra la siguiente figura.
+
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q3-2.jpeg)
 
 En lo que respecta a la posición 4 se debe llegar a la siguiente figura:
 
@@ -138,21 +142,23 @@ En lo que respecta a la posición 4 se debe llegar a la siguiente figura:
 
 Se llega a lo siguiente:
 
-IMAGEN Posicion 4. 
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q4-1.jpeg)
+
+Adicionalmente, se muestra otra vista del robot en esta pose.
+
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q4-2.jpeg)
 
 Finalmente, la posicion de descanso debe ser de la siguiente manera:
 
 ![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Posiciones/Recogida.jpg)
 
-En la practica se llega a esta posicion en la cual el robot permanece estable y en general sin alteraciones en su estructura incluso si a este se le quita su suministro de energia. 
+En la práctica se llega a esta posición en la cual el robot permanece estable y en general sin alteraciones en su estructura incluso si a este se le quita su suministro de energia. 
 
-IMAGEN REPOSO
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q5.jpeg)
+
+### Video de funcionamiento.
 
 https://user-images.githubusercontent.com/42379708/195942567-c50231a5-87b1-4e06-b8b9-f3997698d7d9.mp4
 
-
-
-
-
-
+### Conclusiones.
 
