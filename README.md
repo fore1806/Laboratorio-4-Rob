@@ -102,7 +102,36 @@ Con estos parámetros se hallan las matrices de transformación homogéneas para
 
 Teniendo en cuenta las configuraciones especificadas se encuentra la posición y orientación del último sistema coordenado respecto al marco {0}. Para la posición HOME, la posición del robot debe ser la siguiente:
 
-![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Posiciones/Home.jpg)
+$\begin{array}{l}
+\left(\begin{array}{cccc}
+\cos \left(O_4 \right)\,\sigma_3 -\sin \left(O_4 \right)\,\sigma_4  & -\sin \left(O_4 \right)\,\sigma_3 -\cos \left(O_4 \right)\,\sigma_4  & \sin \left(O_1 \right) & \frac{5321\,\sigma_7 \,\cos \left(O_1 \right)}{50}-100\,\sin \left(O_4 \right)\,\sigma_4 +100\,\cos \left(O_4 \right)\,\sigma_3 +100\,\sigma_7 \,\sigma_{10} \,\cos \left(O_1 \right)-100\,\sigma_8 \,\sigma_9 \,\cos \left(O_1 \right)\\
+\cos \left(O_4 \right)\,\sigma_1 -\sin \left(O_4 \right)\,\sigma_2  & -\cos \left(O_4 \right)\,\sigma_2 -\sin \left(O_4 \right)\,\sigma_1  & -\cos \left(O_1 \right) & 100\,\cos \left(O_4 \right)\,\sigma_1 -100\,\sin \left(O_4 \right)\,\sigma_2 +\frac{5321\,\sigma_7 \,\sin \left(O_1 \right)}{50}+100\,\sigma_7 \,\sigma_{10} \,\sin \left(O_1 \right)-100\,\sigma_8 \,\sigma_9 \,\sin \left(O_1 \right)\\
+\cos \left(O_4 \right)\,\sigma_6 +\sin \left(O_4 \right)\,\sigma_5  & \cos \left(O_4 \right)\,\sigma_5 -\sin \left(O_4 \right)\,\sigma_6  & 0 & \frac{5321\,\sigma_8 }{50}+100\,\sigma_7 \,\sigma_9 +100\,\sigma_{10} \,\sigma_8 +100\,\cos \left(O_4 \right)\,\sigma_6 +100\,\sin \left(O_4 \right)\,\sigma_5 +\frac{933}{10}\\
+0 & 0 & 0 & 1
+\end{array}\right)\\
+\mathrm{}\\
+\textrm{where}\\
+\mathrm{}\\
+\;\;\sigma_1 =\sigma_7 \,\sigma_{10} \,\sin \left(O_1 \right)-\sigma_8 \,\sigma_9 \,\sin \left(O_1 \right)\\
+\mathrm{}\\
+\;\;\sigma_2 =\sigma_7 \,\sigma_9 \,\sin \left(O_1 \right)+\sigma_{10} \,\sigma_8 \,\sin \left(O_1 \right)\\
+\mathrm{}\\
+\;\;\sigma_3 =\sigma_7 \,\sigma_{10} \,\cos \left(O_1 \right)-\sigma_8 \,\sigma_9 \,\cos \left(O_1 \right)\\
+\mathrm{}\\
+\;\;\sigma_4 =\sigma_7 \,\sigma_9 \,\cos \left(O_1 \right)+\sigma_{10} \,\sigma_8 \,\cos \left(O_1 \right)\\
+\mathrm{}\\
+\;\;\sigma_5 =\sigma_7 \,\sigma_{10} -\sigma_8 \,\sigma_9 \\
+\mathrm{}\\
+\;\;\sigma_6 =\sigma_7 \,\sigma_9 +\sigma_{10} \,\sigma_8 \\
+\mathrm{}\\
+\;\;\sigma_7 =\cos \left(O_2 +\frac{48}{25}\right)\\
+\mathrm{}\\
+\;\;\sigma_8 =\sin \left(O_2 +\frac{48}{25}\right)\\
+\mathrm{}\\
+\;\;\sigma_9 =\sin \left(O_3 +\frac{61}{50}\right)\\
+\mathrm{}\\
+\;\;\sigma_{10} =\cos \left(O_3 +\frac{61}{50}\right)
+\end{array}$
 
 La cual coincide con lo obtenido en la práctica:
 
@@ -160,7 +189,7 @@ En la práctica se llega a esta posición en la cual el robot permanece estable 
 
 A continuación, se puede observar el video del funcionamiento del robot, al ingresar cada uno de los comandos especificados.
 
-https://user-images.githubusercontent.com/42379708/195942567-c50231a5-87b1-4e06-b8b9-f3997698d7d9.mp4
+https://user-images.githubusercontent.com/42379708/195968567-99f284ed-60b2-4692-9420-3c23cdecf806.mp4
 
 ### Conclusiones
 
