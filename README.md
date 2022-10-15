@@ -98,11 +98,13 @@ Teniendo en cuenta este diagrama, se encuentran los parámetros de articulación
 
 Con estos parámetros se hallan las matrices de transformación homogéneas para cada uno de los sistemas y finalmente se halla el modelo geométrico directo a partir del modelo interno de la cadena cinemática. Se obtienen entonces la siguiente matriz con sus respectivos parámetros:
 
-![image](https://user-images.githubusercontent.com/42379708/195934418-88b45a6b-1f6f-451c-bf1a-78fff993ad99.png)
 
 Teniendo en cuenta las configuraciones especificadas se encuentra la posición y orientación del último sistema coordenado respecto al marco {0}. Para la posición HOME, la posición del robot debe ser la siguiente:
 
-$\begin{array}{l}
+![image](https://user-images.githubusercontent.com/42379708/195934418-88b45a6b-1f6f-451c-bf1a-78fff993ad99.png)
+
+
+\begin{array}{l}
 \left(\begin{array}{cccc}
 \cos \left(O_4 \right)\,\sigma_3 -\sin \left(O_4 \right)\,\sigma_4  & -\sin \left(O_4 \right)\,\sigma_3 -\cos \left(O_4 \right)\,\sigma_4  & \sin \left(O_1 \right) & \frac{5321\,\sigma_7 \,\cos \left(O_1 \right)}{50}-100\,\sin \left(O_4 \right)\,\sigma_4 +100\,\cos \left(O_4 \right)\,\sigma_3 +100\,\sigma_7 \,\sigma_{10} \,\cos \left(O_1 \right)-100\,\sigma_8 \,\sigma_9 \,\cos \left(O_1 \right)\\
 \cos \left(O_4 \right)\,\sigma_1 -\sin \left(O_4 \right)\,\sigma_2  & -\cos \left(O_4 \right)\,\sigma_2 -\sin \left(O_4 \right)\,\sigma_1  & -\cos \left(O_1 \right) & 100\,\cos \left(O_4 \right)\,\sigma_1 -100\,\sin \left(O_4 \right)\,\sigma_2 +\frac{5321\,\sigma_7 \,\sin \left(O_1 \right)}{50}+100\,\sigma_7 \,\sigma_{10} \,\sin \left(O_1 \right)-100\,\sigma_8 \,\sigma_9 \,\sin \left(O_1 \right)\\
@@ -131,7 +133,7 @@ $\begin{array}{l}
 \;\;\sigma_9 =\sin \left(O_3 +\frac{61}{50}\right)\\
 \mathrm{}\\
 \;\;\sigma_{10} =\cos \left(O_3 +\frac{61}{50}\right)
-\end{array}$
+\end{array}
 
 La cual coincide con lo obtenido en la práctica:
 
