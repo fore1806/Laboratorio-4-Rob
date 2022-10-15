@@ -156,9 +156,16 @@ En la práctica se llega a esta posición en la cual el robot permanece estable 
 
 ![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotos/q5.jpeg)
 
-### Video de funcionamiento.
+### Video de funcionamiento
+
+A continuación, se puede observar el video del funcionamiento del robot, al ingresar cada uno de los comandos especificados.
 
 https://user-images.githubusercontent.com/42379708/195942567-c50231a5-87b1-4e06-b8b9-f3997698d7d9.mp4
 
-### Conclusiones.
+### Conclusiones
 
+- Se evidencia la facilidad en la conexión del manipulador Phantom X con el lenguaje de programación Python para el envio de instrucciones.
+
+- Se comprueba la pertinencia del modelo cinemático directo del robot implementado gracias a las herramientas del Toolbox RVC de Peter Corke, al evidenciar la gran correlación con las posturas del manipulador físico.
+
+- Se encuentra gran utilidad en método estándar de Denavit-Hartenberg estándar para representar la postura del robot simplificando el número de parámetros requeridos por cada una de las articulaciones y eslabones del manipulador.
