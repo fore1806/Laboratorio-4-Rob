@@ -106,7 +106,7 @@ Teniendo en cuenta las configuraciones especificadas se encuentra la posición y
 
 La cual coincide con lo obtenido en la práctica:
 
-![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q0.jpeg)
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotos/q0.jpeg)
 
 En lo que respecta a la posición 1, se debe llegar a la siguiente figura:
 
@@ -114,7 +114,7 @@ En lo que respecta a la posición 1, se debe llegar a la siguiente figura:
 
 Lo cual se corrobora en la postura obtenida en el laboratorio:
 
-![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q1.jpeg)
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotos/q1.jpeg)
 
 La posición 2 debe ser:
 
@@ -122,7 +122,7 @@ La posición 2 debe ser:
 
 Efectivamente es:
 
-![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q2.jpeg)
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotos/q2.jpeg)
 
 Ya para la posicion 3 se busca lo siguiente:
 
@@ -130,11 +130,11 @@ Ya para la posicion 3 se busca lo siguiente:
 
 Se obtiene:
 
-![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q3-1.jpeg)
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotos/q3-1.jpeg)
 
 Para ver de mejor manera esta configuración se muestra la siguiente figura.
 
-![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q3-2.jpeg)
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotos/q3-2.jpeg)
 
 En lo que respecta a la posición 4 se debe llegar a la siguiente figura:
 
@@ -142,11 +142,11 @@ En lo que respecta a la posición 4 se debe llegar a la siguiente figura:
 
 Se llega a lo siguiente:
 
-![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q4-1.jpeg)
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotos/q4-1.jpeg)
 
 Adicionalmente, se muestra otra vista del robot en esta pose.
 
-![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q4-2.jpeg)
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotos/q4-2.jpeg)
 
 Finalmente, la posicion de descanso debe ser de la siguiente manera:
 
@@ -154,7 +154,7 @@ Finalmente, la posicion de descanso debe ser de la siguiente manera:
 
 En la práctica se llega a esta posición en la cual el robot permanece estable y en general sin alteraciones en su estructura incluso si a este se le quita su suministro de energia. 
 
-![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotor/q5.jpeg)
+![](https://github.com/fore1806/Laboratorio-4-Rob/blob/master/DIAGRAMAS-IMAGENES/Fotos/q5.jpeg)
 
 ### Video de funcionamiento.
 
